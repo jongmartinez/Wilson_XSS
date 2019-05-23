@@ -1,6 +1,11 @@
 <p align="center">
  <img src="images/logo.png" height="200"><br/>
-A powerful XSS scanner made in python 3.7</p>
+A powerful XSS scanner made in python 3.7
+ 
+Note: This tool is not mine, i only modified and added new lines for supporting a payload list as input. Be sure you place a file "xss_payload_list.txt" with your custom payloads.
+</p>
+
+
 
 ## Installing
 
@@ -21,22 +26,22 @@ pip install requests
 Commands:
 
 ```bash
-git clone https://github.com/menkrep1337/XSSCon
-chmod 755 -R XSSCon
-cd XSSCon
-python3 xsscon.py --help 
+git clone https://github.com/menkrep1337/wilsonxss.py
+chmod 755 -R wilsonxss
+cd wilsonxss
+python3 wilsonxss.py --help 
 ```
 ## Usage
 Basic usage:
 
 ```bash
-python3 xsscon.py -u http://testphp.vulnweb.com
+python3 wilsonxss.py -u http://testphp.vulnweb.com
 ```
 <br/>
 Advanced usage:
 
 ```bash
-python3 xsscon.py --help
+python3 wilsonxss.py --help
 ```
 
 ## Main features
