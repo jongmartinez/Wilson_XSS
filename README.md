@@ -56,23 +56,3 @@ python3 wilsonxss.py --help
 
 <img src="images/screenshot.png">
 
-## Roadmap
-
-v0.3B:
-------
-<li> Added custom options ( --proxy, --user-agent etc... )</li>
-<br/>
-
-v0.3B Patch:
-------
-<li>Added support for ( form method GET ) </li>
-
-v0.4B:
-------
-<li>Improved Error handling</li>
-<li>Now Multiple parameters for GET method is Supported</li>
-
-## Note
-* Sorry for my bad english 
-* if you run xsscon on the win10 terminal you will get an untidy output
-* now it doesn't support DOM
