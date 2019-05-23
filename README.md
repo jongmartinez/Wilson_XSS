@@ -2,7 +2,7 @@
  <img src="images/logo.png" height="200"><br/>
 A powerful XSS scanner made in python 3.7
  
-<h2>Note: This tool is not mine, i only modified and added new lines for supporting a payload list as input. Be sure to place a "xss_payload_list.txt" file with your custom payloads.</h2>
+<h2>Note: This tool is not mine, i only modified and added new lines for supporting a payload list as input and to loop for each payload. Be sure to place a "xss_payload_list.txt" file with your custom payloads.</h2>
 </p>
 
 
