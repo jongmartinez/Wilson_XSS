@@ -21,22 +21,22 @@ pip install requests
 Commands:
 
 ```bash
-git clone https://github.com/menkrep1337/XSSCon
+git clone https://github.com/menkrep1337/wilsonxss.py
 chmod 755 -R XSSCon
 cd XSSCon
-python3 xsscon.py --help 
+python3 wilsonxss.py --help 
 ```
 ## Usage
 Basic usage:
 
 ```bash
-python3 xsscon.py -u http://testphp.vulnweb.com
+python3 wilsonxss.py -u http://testphp.vulnweb.com
 ```
 <br/>
 Advanced usage:
 
 ```bash
-python3 xsscon.py --help
+python3 wilsonxss.py --help
 ```
 
 ## Main features
