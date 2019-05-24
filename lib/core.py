@@ -73,7 +73,7 @@ class core:
 						log_wilson.write("\n------------------------------------------------------------------------------------------------------- \n")
 						log_wilson.write("\nDetected XSS (POST) at "+urljoin(self.url,req.url))
 						log_wilson.write("\nPost data: "+str(keys))
-						log_wilson.write("\nPayload used: "+ x=str(xss_payload))
+						log_wilson.write("\nPayload used: "+str(xss_payload))
 						
 						log_wilson.close()
 
