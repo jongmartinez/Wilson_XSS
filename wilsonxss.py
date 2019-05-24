@@ -1,6 +1,7 @@
 '''
 XSSCon - 2019/2020
-This project was created by menkrep1337 with 407Aex team. 
+This project was originally created by menkrep1337 with 407Aex team. 
+Modified by Jonatan Martinez
 Copyright under the MIT license
 '''
 import argparse
@@ -10,8 +11,8 @@ from lib.core import *
 from random import randint
 from lib.crawler.crawler import *
 epilog="""
-Github: https://www.github.com/menkrep1337/XSSCon
-Version: 0.4 Beta 
+Github: https://github.com/jongmartinez/Wilson_XSS
+Version: 0.1 Beta 
 """
 def populate_list():
 	payload_lit= []
@@ -56,7 +57,7 @@ def start():
 	
 	getopt=parse.parse_args()
 	print(logo)
-	Log.info("Starting XSSCon...")
+	Log.info("Starting Wilson_XSS...")
 	if getopt.u:
 		core.main(getopt.u,getopt.proxy,getopt.user_agent,check(getopt),populate_list(),getopt.method)
 		
@@ -68,11 +69,12 @@ def start():
 	elif getopt.about:
 		print("""
 ***************
-Project: XSSCon
+Project: XSSCon/Wilson_XSS
 License: MIT
-Author: menkrep1337
+Original Author Author: menkrep1337
+Modified by: Jonatan Martinez
 Team: 407 Authentic Exploit
-Last updates: 2019 may 19
+Last updates: 2019 may 23
 Note: Take your own RISK
 ****************
 """+epilog)
