@@ -68,7 +68,16 @@ class core:
 					if xss_payload in req.text:
 						Log.high("Detected XSS (POST) at "+urljoin(self.url,req.url))
 						Log.high("Post data: "+str(keys))
-						Log.high("Payload used: {x}", x=str(xss_payload))
+						Log.high("Payload used: "+ str(xss_payload))
+						log_wilson = open("wilson_log_results.txt", 'a')
+						log_wilson.write("\n------------------------------------------------------------------------------------------------------- \n")
+						log_wilson.write("\nDetected XSS (POST) at "+urljoin(self.url,req.url))
+						log_wilson.write("\nPost data: "+str(keys))
+						log_wilson.write("\nPayload used: {x}", x=str(xss_payload))
+						
+						log_wilson.close()
+
+
 					else:
 						Log.info("This page is safe from XSS (POST) attack but not 100% yet...")
 	
@@ -113,6 +122,13 @@ class core:
 							Log.high("Detected XSS (GET) at "+urljoin(self.url,req.url))
 							Log.high("GET data: "+str(keys))
 							Log.high("Payload used: "+str(xss_payload))
+							log_wilson = open("wilson_log_results.txt", 'a')
+							log_wilson.write("\n------------------------------------------------------------------------------------------------------- \n")
+							log_wilson.write("\nDetected XSS (GET) at "+urljoin(self.url,req.url))
+							log_wilson.write("\nGET data: "+str(keys))
+							log_wilson.write("\nPayload used: "+str(xss_payload))
+							
+							log_wilson.close()
 						else:
 							Log.info("This page is safe from XSS (GET) attack but not 100% yet...")
 		
@@ -140,6 +156,12 @@ class core:
 						_respon=self.session.get(test)
 						if xss_payload in _respon.text or xss_payload in self.session.get(query_all):
 							Log.high("Detected XSS (GET) at "+_respon.url)
+							Log.high("Payload used: "+str(xss_payload))
+							log_wilson = open("wilson_log_results.txt", 'a')							
+							log_wilson.write("\n------------------------------------------------------------------------------------------------------- \n")
+							log_wilson.write("\nPayload used: "+str(xss_payload))
+							
+							log_wilson.close()
 						
 
 	@classmethod

@@ -39,7 +39,8 @@ def check(getopt):
 	
 def start():
 	parse=argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter,usage="XSSCon -u <target> [options]",epilog=epilog,add_help=False)
-	
+	a = open("wilson_log_results.txt", "w+")
+	a.close()
 	pos_opt=parse.add_argument_group("Options")
 	pos_opt.add_argument("--help",action="store_true",default=False,help="Show usage and help parameters")
 	pos_opt.add_argument("-u",metavar="",help="Target url (e.g. http://testphp.vulnweb.com)")
